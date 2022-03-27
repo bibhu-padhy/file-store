@@ -6,17 +6,22 @@
   "author": "bibhu-padhy <bibhupadhy140@gmail.com>",
   "private": true,
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "dev:win": "cross-env QENV=DEV quasar dev",
+    "dev": "QENV=DEV quasar dev"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
+    "cross-env": "^7.0.3",
+    "firebase": "^9.6.9",
     "quasar": "^2.6.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0"
   },
   "devDependencies": {
-    "@quasar/app-webpack": "^3.0.0"
+    "@quasar/app-webpack": "^3.0.0",
+    "dotenv": "^16.0.0"
   },
   "browserslist": [
     "last 10 Chrome versions",
